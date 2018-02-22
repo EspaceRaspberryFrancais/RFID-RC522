@@ -18,6 +18,7 @@ def end_read(signal,frame):
 signal.signal(signal.SIGINT, end_read)
 MIFAREReader = MFRC522.MFRC522()
 
+print ("Passer le tag RFID a lire")
 
 while continue_reading:
     
