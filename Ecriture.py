@@ -19,12 +19,13 @@ signal.signal(signal.SIGINT, end_read)
 MIFAREReader = MFRC522.MFRC522()
 
 data = []
-texte = raw_input("Texte ?\n")
+texte = raw_input("Entrez une chaine de caractère :\n")
 for c in texte:
     if (len(data)<16):
         data.append(int(ord(c)))
 while(len(data)!=16):
     data.append(0)
+print ("Placez votre carte RFID")
 
 while continue_reading:
       
