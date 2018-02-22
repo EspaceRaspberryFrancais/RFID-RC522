@@ -345,7 +345,10 @@ class MFRC522:
       c=0
       while (c<16):
         if(backData[c]!=0) :
-          print (str(unichr(backData[c])),end="")
+          try :
+            print (str(unichr(backData[c])),end="")
+          except :
+            print("Contenu Illisible")
         c+=1
       print("\n")
   
