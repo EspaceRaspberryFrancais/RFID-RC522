@@ -348,7 +348,7 @@ class MFRC522:
           try :
             print (str(unichr(backData[c])),end="")
           except :
-            print("Contenu Illisible")
+            print(" Contenu Illisible")
         c+=1
       print("\n")
   
